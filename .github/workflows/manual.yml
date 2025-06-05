@@ -36,7 +36,7 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
       - name: Pyre Action
-        uses: facebook/pyre-action@60697a7858f7cc8470d4aa9a6f5fd86b7dba5dcc
+        uses: facebook/pyre-action@v0.0.1
         with:
           repo-directory: './'
           requirements-path: './requirements.txt'

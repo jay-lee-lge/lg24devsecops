@@ -37,8 +37,9 @@ jobs:
       # ✅ Coveralls 전에 upload-artifact 미리 호출 (프리로드용)
       - name: Create dummy artifact file
         run: echo "dummy" > dummy.txt
+
       - name: Preload upload-artifact action
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4.6.2
         with:
           name: dummy
           path: ./dummy.txt
